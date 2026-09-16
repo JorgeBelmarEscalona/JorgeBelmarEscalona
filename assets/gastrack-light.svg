@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="170" viewBox="0 0 830 170" role="img" aria-label="Ruta de despacho de cilindros">
+<defs>
+  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#E4E8EC"/></pattern>
+  <radialGradient id="vg" cx=".5" cy=".5" r=".6"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <mask id="m"><rect width="830" height="170" fill="url(#vg)"/></mask>
+  <path id="route" d="M60 112 C 150 112, 170 62, 260 66 S 380 128, 470 110 S 600 48, 690 70 S 760 108, 780 104"/>
+</defs>
+<rect width="830" height="170" fill="url(#dots)" mask="url(#m)"/>
+
+<!-- bodega -->
+<g fill="none" stroke="#656D76" stroke-width="1.4" stroke-linejoin="round">
+  <path d="M44 96 V80 L60 70 L76 80 V96 Z"/><path d="M54 96 v-9 h12 v9"/>
+</g>
+<g fill="none" stroke="#656D76" stroke-width="1.4"><rect x="252" y="28" width="10" height="20" rx="4"/><path d="M255 28 v-3 h4 v3"/></g><g fill="none" stroke="#656D76" stroke-width="1.4"><rect x="266" y="28" width="10" height="20" rx="4"/><path d="M269 28 v-3 h4 v3"/></g>
+<g fill="none" stroke="#656D76" stroke-width="1.4"><rect x="465" y="128" width="10" height="20" rx="4"/><path d="M468 128 v-3 h4 v3"/></g>
+<g fill="none" stroke="#656D76" stroke-width="1.4" stroke-linecap="round"><path d="M780 90 v-26"/><path d="M780 64 h16 l-4 5 l4 5 h-16" stroke-linejoin="round"/></g>
+
+<use href="#route" fill="none" stroke="#D0D7DE" stroke-width="3" stroke-linecap="round"/>
+<use href="#route" fill="none" stroke="#2F7A5F" stroke-width="3" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1">
+  <animate attributeName="stroke-dashoffset" values="1.00;0.70;0.70;0.42;0.42;0.00;0.00" keyTimes="0;.20;.26;.50;.56;.90;1" dur="16s" repeatCount="indefinite"/>
+</use>
+<circle cx="60" cy="112" r="6" fill="#2F7A5F" stroke="#2F7A5F" stroke-width="2"></circle><circle cx="260" cy="66" r="6" fill="#FFFFFF" stroke="#2F7A5F" stroke-width="2"><animate attributeName="fill" values="#FFFFFF;#2F7A5F;#2F7A5F;#FFFFFF" keyTimes="0;0.26;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="260" cy="66" r="6" fill="none" stroke="#2F7A5F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.26;0.34;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.26;0.34;1" dur="16s" repeatCount="indefinite"/></circle><circle cx="470" cy="110" r="6" fill="#FFFFFF" stroke="#2F7A5F" stroke-width="2"><animate attributeName="fill" values="#FFFFFF;#2F7A5F;#2F7A5F;#FFFFFF" keyTimes="0;0.56;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="470" cy="110" r="6" fill="none" stroke="#2F7A5F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.56;0.64;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.56;0.64;1" dur="16s" repeatCount="indefinite"/></circle><circle cx="780" cy="104" r="6" fill="#FFFFFF" stroke="#2F7A5F" stroke-width="2"><animate attributeName="fill" values="#FFFFFF;#2F7A5F;#2F7A5F;#FFFFFF" keyTimes="0;0.90;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="780" cy="104" r="6" fill="none" stroke="#2F7A5F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.90;0.98;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.90;0.98;1" dur="16s" repeatCount="indefinite"/></circle>
+
+<g>
+  <animateMotion dur="16s" repeatCount="indefinite" keyPoints="0;.30;.30;.58;.58;1;1" keyTimes="0;.20;.26;.50;.56;.90;1" calcMode="spline"
+    keySplines=".4 0 .6 1;0 0 1 1;.4 0 .6 1;0 0 1 1;.4 0 .6 1;0 0 1 1"><mpath href="#route"/></animateMotion>
+  <g transform="translate(-16 -24)">
+    <rect x="0" y="4" width="21" height="13" rx="2.5" fill="#1F2328"/>
+    <path d="M22 8 h6 l5 5 v4 h-11 z" fill="#1F2328"/>
+    <rect x="25" y="10" width="4" height="3" rx=".8" fill="#FFFFFF"/>
+    <circle cx="7" cy="18" r="3" fill="#FFFFFF" stroke="#1F2328" stroke-width="1.6"/>
+    <circle cx="26" cy="18" r="3" fill="#FFFFFF" stroke="#1F2328" stroke-width="1.6"/>
+  </g>
+</g>
+</svg>
