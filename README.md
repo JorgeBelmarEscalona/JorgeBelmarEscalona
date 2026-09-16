@@ -8,7 +8,7 @@ Hola, soy Jorge. Desarrollo plataformas web y apps móviles para equipos que tra
 Hoy trabajo principalmente con **PHP**, **Kotlin**, **Swift** y **Python**.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php,js,kotlin,swift,py,mysql,docker,linux,git,androidstudio&theme=dark">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php%2Cjs%2Ckotlin%2Cswift%2Cpy%2Cmysql%2Cdocker%2Clinux%2Cgit%2Candroidstudio&theme=dark">
   <img src="https://skillicons.dev/icons?i=php,js,kotlin,swift,py,mysql,docker,linux,git,androidstudio&theme=light" alt="PHP, JavaScript, Kotlin, Swift, Python, MySQL, Docker, Linux, Git, Android Studio" width="420">
 </picture>
 
