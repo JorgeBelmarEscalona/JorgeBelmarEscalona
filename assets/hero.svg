@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="280" viewBox="0 0 830 280" role="img" aria-label="Jorge Belmar — Software Developer · Web &amp; Mobile">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#08121A"/>
+    <stop offset="1" stop-color="#0E2431"/>
+  </linearGradient>
+  <radialGradient id="glowA"><stop offset="0" stop-color="#4FC39A" stop-opacity=".45"/><stop offset="1" stop-color="#4FC39A" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB"><stop offset="0" stop-color="#2D6E9E" stop-opacity=".55"/><stop offset="1" stop-color="#2D6E9E" stop-opacity="0"/></radialGradient>
+  <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".55" stop-color="#E3F4EC"/>
+    <stop offset="1" stop-color="#7FD8B4"/>
+  </linearGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity=".05"/></pattern>
+  <clipPath id="card"><rect width="830" height="280" rx="18"/></clipPath>
+</defs>
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .in   { opacity: 0; animation: in .8s cubic-bezier(.2,.8,.2,1) forwards; }
+  @keyframes in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .tag  { opacity: 0; animation: tag 12s infinite; }
+  @keyframes tag { 0% { opacity: 0; transform: translateY(6px); } 4%, 29% { opacity: 1; transform: none; } 33%, 100% { opacity: 0; transform: translateY(-6px); } }
+  .line { opacity: 0; animation: line 10s infinite; }
+  @keyframes line { 0% { opacity: 0; } 3%, 88% { opacity: 1; } 94%, 100% { opacity: 0; } }
+  .cursor { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+
+<g clip-path="url(#card)">
+  <rect width="830" height="280" fill="url(#bg)"/>
+  <rect width="830" height="280" fill="url(#dots)"/>
+  <circle cx="700" cy="30" r="240" fill="url(#glowA)">
+    <animate attributeName="cx" values="700;610;700" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="30;90;30" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="90" cy="300" r="260" fill="url(#glowB)">
+    <animate attributeName="cx" values="90;200;90" dur="20s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<rect x=".5" y=".5" width="829" height="279" rx="17.5" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+<!-- Texto -->
+<text x="48" y="74" class="mono in" font-size="13" fill="#4FC39A" letter-spacing="1.5">HOLA, SOY</text>
+<text x="46" y="126" class="sans in" style="animation-delay:.1s" font-size="48" font-weight="800" fill="url(#name)" letter-spacing="-1">Jorge Belmar</text>
+<text x="48" y="160" class="sans in" style="animation-delay:.2s" font-size="19" font-weight="500" fill="#A9BDCB">Software Developer · Web &amp; Mobile</text>
+
+<g class="sans" font-size="15" fill="#D6E4EC">
+  <text x="48" y="194" class="tag">Del terreno al panel, en tiempo real.</text>
+  <text x="48" y="194" class="tag" style="animation-delay:4s">Apps nativas para Android e iOS.</text>
+  <text x="48" y="194" class="tag" style="animation-delay:8s">Software simple, rápido y seguro.</text>
+</g>
+
+<g class="sans in" style="animation-delay:.35s" font-size="12" font-weight="600">
+  <rect x="48"  y="216" width="58" height="28" rx="14" fill="#4FC39A" fill-opacity=".12" stroke="#4FC39A" stroke-opacity=".35"/>
+  <text x="77"  y="234" text-anchor="middle" fill="#7FD8B4">Web</text>
+  <rect x="114" y="216" width="80" height="28" rx="14" fill="#4FC39A" fill-opacity=".12" stroke="#4FC39A" stroke-opacity=".35"/>
+  <text x="154" y="234" text-anchor="middle" fill="#7FD8B4">Android</text>
+  <rect x="202" y="216" width="50" height="28" rx="14" fill="#4FC39A" fill-opacity=".12" stroke="#4FC39A" stroke-opacity=".35"/>
+  <text x="227" y="234" text-anchor="middle" fill="#7FD8B4">iOS</text>
+  <rect x="260" y="216" width="72" height="28" rx="14" fill="#FFFFFF" fill-opacity=".05" stroke="#FFFFFF" stroke-opacity=".14"/>
+  <text x="296" y="234" text-anchor="middle" fill="#A9BDCB">Python</text>
+  <rect x="340" y="216" width="112" height="28" rx="14" fill="#FFFFFF" fill-opacity=".05" stroke="#FFFFFF" stroke-opacity=".14"/>
+  <text x="396" y="234" text-anchor="middle" fill="#A9BDCB">Automatización</text>
+</g>
+
+<!-- Terminal -->
+<g class="in" style="animation-delay:.25s">
+  <rect x="486" y="46" width="300" height="188" rx="12" fill="#060D13" fill-opacity=".82" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <path d="M486 72 H786" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <circle cx="504" cy="59" r="5" fill="#FF5F57" fill-opacity=".85"/>
+  <circle cx="521" cy="59" r="5" fill="#FEBC2E" fill-opacity=".85"/>
+  <circle cx="538" cy="59" r="5" fill="#28C840" fill-opacity=".85"/>
+  <text x="636" y="63" class="mono" font-size="11" fill="#5F7385" text-anchor="middle">jorge@oxycom — zsh</text>
+</g>
+<g class="mono" font-size="12.5">
+  <text x="504" y="100" class="line" style="animation-delay:.6s"><tspan fill="#4FC39A">❯</tspan><tspan fill="#E6EDF3"> pangea build --all</tspan></text>
+  <text x="504" y="126" class="line" style="animation-delay:1.3s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> web     </tspan><tspan fill="#7D8FA0">PHP · PWA</tspan></text>
+  <text x="504" y="148" class="line" style="animation-delay:1.9s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> android </tspan><tspan fill="#7D8FA0">Kotlin</tspan></text>
+  <text x="504" y="170" class="line" style="animation-delay:2.5s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> ios     </tspan><tspan fill="#7D8FA0">Swift · SwiftUI</tspan></text>
+  <text x="504" y="200" class="line" style="animation-delay:3.2s"><tspan fill="#4FC39A">❯</tspan><tspan fill="#E6EDF3"> </tspan><tspan class="cursor" fill="#4FC39A">▍</tspan></text>
+</g>
+</svg>
