@@ -2,8 +2,8 @@
 
 Salida (OUT_DIR): stats.svg, langs.svg, activity.svg y repo-<nombre>.svg.
 
-Usa STATS_TOKEN si existe (PAT con scope `repo`, incluye repos privados en
-lenguajes y conteos); si no, GITHUB_TOKEN, que solo ve lo público.
+Usa STATS_TOKEN si existe (PAT con scopes `repo` y `read:org`, incluye repos
+privados propios y de organizaciones en lenguajes y conteos); si no, GITHUB_TOKEN, que solo ve lo público.
 """
 import datetime as dt
 import json
@@ -16,6 +16,8 @@ TOKEN = os.environ.get("STATS_TOKEN") or os.environ["GITHUB_TOKEN"]
 PRIVATE = bool(os.environ.get("STATS_TOKEN"))
 OUT = os.environ.get("OUT_DIR", "dist")
 
+# Repos a ignorar (nombres separados por coma), p. ej. proyectos en los que no participas.
+EXCLUDE_REPOS = {n.strip() for n in os.environ.get("EXCLUDE_REPOS", "").split(",") if n.strip()}
 EXCLUDE_LANGS = {"Jupyter Notebook", "Makefile", "CMake", "Dockerfile"}
 
 # Descripciones propias: la mayoría de los repos no tiene descripción en GitHub.
@@ -48,10 +50,11 @@ query($login: String!, $privacy: RepositoryPrivacy, $cursor: String) {
         weeks { contributionDays { date contributionCount contributionLevel } }
       }
     }
-    repositories(first: 100, after: $cursor, ownerAffiliations: OWNER, isFork: false, privacy: $privacy) {
+    repositories(first: 100, after: $cursor, ownerAffiliations: [OWNER, ORGANIZATION_MEMBER], isFork: false, privacy: $privacy) {
       totalCount
       pageInfo { hasNextPage endCursor }
       nodes {
+        name
         stargazerCount
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } }
       }
@@ -81,7 +84,7 @@ def fetch_user():
     while True:
         user = gql(USER_QUERY, variables)["user"]
         page = user["repositories"]
-        repos += page["nodes"]
+        repos += [r for r in page["nodes"] if r["name"] not in EXCLUDE_REPOS]
         if not page["pageInfo"]["hasNextPage"]:
             return user, repos
         variables["cursor"] = page["pageInfo"]["endCursor"]

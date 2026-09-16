@@ -3,15 +3,19 @@
 </p>
 
 <p align="center">
-  Desarrollo plataformas web y apps móviles que conectan el trabajo en terreno con la gestión.<br/>
-  Hoy en <b>Oxycom</b>, construyendo el sistema de No Conformidades de <b>Pangea Geotecnia</b>.
+  Desarrollo plataformas web y apps móviles para logística e industria: de la bodega y el terreno a la gestión.<br/>
+  Proyectos recientes: <b>Gastrack</b> y el sistema de No Conformidades de <b>Pangea Geotecnia</b>.
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=php,js,html,css,kotlin,swift,py,cpp,docker,mysql,git,linux,androidstudio&theme=dark&perline=13" alt="Stack"/>
+  <img src="https://skillicons.dev/icons?i=php,js,html,css,kotlin,swift,py,cpp,mysql,docker,git,linux,androidstudio,githubactions&theme=dark&perline=14" alt="Stack"/>
 </p>
 
 <br/>
+
+<p align="center">
+  <img src="assets/gastrack.svg" width="100%" alt="Gastrack"/>
+</p>
 
 <p align="center">
   <img src="assets/pangea.svg" width="100%" alt="Pangea NC"/>

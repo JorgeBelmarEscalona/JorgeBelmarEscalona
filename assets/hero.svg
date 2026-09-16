@@ -46,7 +46,7 @@
 <text x="48" y="160" class="sans in" style="animation-delay:.2s" font-size="19" font-weight="500" fill="#A9BDCB">Software Developer · Web &amp; Mobile</text>
 
 <g class="sans" font-size="15" fill="#D6E4EC">
-  <text x="48" y="194" class="tag">Del terreno al panel, en tiempo real.</text>
+  <text x="48" y="194" class="tag">Logística, trazabilidad y flota.</text>
   <text x="48" y="194" class="tag" style="animation-delay:4s">Apps nativas para Android e iOS.</text>
   <text x="48" y="194" class="tag" style="animation-delay:8s">Software simple, rápido y seguro.</text>
 </g>
@@ -74,10 +74,10 @@
   <text x="636" y="63" class="mono" font-size="11" fill="#5F7385" text-anchor="middle">jorge@oxycom — zsh</text>
 </g>
 <g class="mono" font-size="12.5">
-  <text x="504" y="100" class="line" style="animation-delay:.6s"><tspan fill="#4FC39A">❯</tspan><tspan fill="#E6EDF3"> pangea build --all</tspan></text>
-  <text x="504" y="126" class="line" style="animation-delay:1.3s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> web     </tspan><tspan fill="#7D8FA0">PHP · PWA</tspan></text>
-  <text x="504" y="148" class="line" style="animation-delay:1.9s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> android </tspan><tspan fill="#7D8FA0">Kotlin</tspan></text>
-  <text x="504" y="170" class="line" style="animation-delay:2.5s"><tspan fill="#4FC39A">✓</tspan><tspan fill="#E6EDF3"> ios     </tspan><tspan fill="#7D8FA0">Swift · SwiftUI</tspan></text>
+  <text x="504" y="100" class="line" style="animation-delay:.6s"><tspan fill="#4FC39A">❯</tspan><tspan fill="#E6EDF3"> git push --all</tspan></text>
+  <text x="504" y="126" class="line" style="animation-delay:1.3s"><tspan fill="#4FC39A">✓</tspan><tspan x="522" fill="#E6EDF3">gastrack</tspan><tspan x="600" fill="#7D8FA0">PHP · Kotlin</tspan></text>
+  <text x="504" y="148" class="line" style="animation-delay:1.9s"><tspan fill="#4FC39A">✓</tspan><tspan x="522" fill="#E6EDF3">rutas</tspan><tspan x="600" fill="#7D8FA0">GPS · NFC</tspan></text>
+  <text x="504" y="170" class="line" style="animation-delay:2.5s"><tspan fill="#4FC39A">✓</tspan><tspan x="522" fill="#E6EDF3">pangea</tspan><tspan x="600" fill="#7D8FA0">Swift · PWA</tspan></text>
   <text x="504" y="200" class="line" style="animation-delay:3.2s"><tspan fill="#4FC39A">❯</tspan><tspan fill="#E6EDF3"> </tspan><tspan class="cursor" fill="#4FC39A">▍</tspan></text>
 </g>
 </svg>

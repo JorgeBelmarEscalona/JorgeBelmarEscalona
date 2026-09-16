@@ -23,6 +23,7 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
           OUT_DIR: dist
 
 
