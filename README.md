@@ -65,7 +65,7 @@ Sistema de desviaciones y no conformidades para Pangea Geotecnia. El equipo repo
   <img src="https://raw.githubusercontent.com/JorgeBelmarEscalona/JorgeBelmarEscalona/output/langs-light.svg" alt="Lenguajes más usados" width="100%">
 </picture>
 
-<sub>JavaScript 73% &nbsp;·&nbsp; Python 18% &nbsp;·&nbsp; C++ 8% &nbsp;·&nbsp; CSS 1%</sub>
+<sub>JavaScript 72% &nbsp;·&nbsp; Python 18% &nbsp;·&nbsp; C++ 8% &nbsp;·&nbsp; CSS 1%</sub>
 
 <sub>Actualizado automáticamente el 16 de sep de 2026.</sub>
 <!-- stats:end -->
