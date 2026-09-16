@@ -1,35 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="170" viewBox="0 0 830 170" role="img" aria-label="Ruta de despacho de cilindros">
-<defs>
-  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#21262D"/></pattern>
-  <radialGradient id="vg" cx=".5" cy=".5" r=".6"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-  <mask id="m"><rect width="830" height="170" fill="url(#vg)"/></mask>
-  <path id="route" d="M60 112 C 150 112, 170 62, 260 66 S 380 128, 470 110 S 600 48, 690 70 S 760 108, 780 104"/>
-</defs>
-<rect width="830" height="170" fill="url(#dots)" mask="url(#m)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="340" viewBox="0 0 830 340" role="img" aria-label="Gastrack">
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+  .mobile { display: none; }
+  @media (max-width: 560px) {
+    .name { font-size: 52px; }
+    .tagline { display: none; }
+    .chips { display: none; }
+    .mobile { display: inline; font-size: 27px; }
+  }
 
-<!-- bodega -->
-<g fill="none" stroke="#8B949E" stroke-width="1.4" stroke-linejoin="round">
-  <path d="M44 96 V80 L60 70 L76 80 V96 Z"/><path d="M54 96 v-9 h12 v9"/>
+  .live { transform-box: fill-box; transform-origin: center; animation: live 2.6s ease-out infinite; }
+  @keyframes live { 0% { opacity: .8; transform: scale(1); } 80%, 100% { opacity: 0; transform: scale(2.6); } }
+
+  .scan { animation: scan 4s ease-in-out infinite; }
+  @keyframes scan { 0% { transform: translateY(0); opacity: 1; } 25% { transform: translateY(74px); } 50% { transform: translateY(0); opacity: 1; } 55%, 100% { opacity: 0; } }
+  .ok { transform-box: fill-box; transform-origin: center; animation: ok 4s cubic-bezier(.3,1.5,.5,1) infinite; }
+  @keyframes ok { 0%, 52% { opacity: 0; transform: scale(.4); } 60%, 90% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1); } }
+  .seg { animation: seg 1.4s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes seg { from { stroke-dasharray: 0 100; } }
+  .spark { stroke-dasharray: 1; animation: spark 7s ease-in-out infinite; }
+  @keyframes spark { 0% { stroke-dashoffset: 1; } 45%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -1; } }
+
+</style>
+<rect x="1" y="1" width="828" height="338" rx="14" fill="#0D1117" stroke="#30363D"/>
+<text class="name" x="34" y="66" font-size="30" font-weight="700" letter-spacing="-.6" fill="#E6EDF3">Gastrack</text>
+<text class="tagline" x="35" y="94" font-size="16" fill="#8B949E">Trazabilidad de cilindros de gas, desde el escaneo hasta la entrega</text>
+<circle cx="796" cy="52" r="5" fill="#6CA0DC"/>
+<circle class="live" cx="796" cy="52" r="5" fill="none" stroke="#6CA0DC" stroke-width="1.5"/>
+
+<rect x="34" y="116" width="104" height="172" rx="16" fill="#161B22" stroke="#30363D" stroke-width="1.5"/><rect x="74" y="124" width="24" height="5" rx="2.5" fill="#30363D"/>
+<rect x="44" y="138" width="84" height="138" rx="8" fill="#1C2129"/>
+<rect x="74" y="174" width="24" height="56" rx="11" fill="#6CA0DC" opacity=".85"/>
+<rect x="80" y="166" width="12" height="9" rx="2" fill="#8B949E"/>
+<rect x="74" y="192" width="24" height="9" fill="#0D1117" opacity=".55"/>
+<g fill="none" stroke="#E6EDF3" stroke-width="2.2" stroke-linecap="round">
+  <path d="M58 168 v-10 h10"/><path d="M104 158 h10 v10"/>
+  <path d="M114 232 v10 h-10"/><path d="M68 242 h-10 v-10"/>
 </g>
-<g fill="none" stroke="#8B949E" stroke-width="1.4"><rect x="252" y="28" width="10" height="20" rx="4"/><path d="M255 28 v-3 h4 v3"/></g><g fill="none" stroke="#8B949E" stroke-width="1.4"><rect x="266" y="28" width="10" height="20" rx="4"/><path d="M269 28 v-3 h4 v3"/></g>
-<g fill="none" stroke="#8B949E" stroke-width="1.4"><rect x="465" y="128" width="10" height="20" rx="4"/><path d="M468 128 v-3 h4 v3"/></g>
-<g fill="none" stroke="#8B949E" stroke-width="1.4" stroke-linecap="round"><path d="M780 90 v-26"/><path d="M780 64 h16 l-4 5 l4 5 h-16" stroke-linejoin="round"/></g>
+<rect class="scan" x="60" y="162" width="52" height="2.5" rx="1.2" fill="#5BB08F"/>
+<g class="ok"><circle cx="86" cy="202" r="17" fill="#5BB08F"/>
+  <path d="M78 202 l6 6 l10 -12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="56" y="258" width="60" height="10" rx="5" fill="#30363D"/>
 
-<use href="#route" fill="none" stroke="#30363D" stroke-width="3" stroke-linecap="round"/>
-<use href="#route" fill="none" stroke="#5BB08F" stroke-width="3" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1">
-  <animate attributeName="stroke-dashoffset" values="1.00;0.70;0.70;0.42;0.42;0.00;0.00" keyTimes="0;.20;.26;.50;.56;.90;1" dur="16s" repeatCount="indefinite"/>
-</use>
-<circle cx="60" cy="112" r="6" fill="#5BB08F" stroke="#5BB08F" stroke-width="2"></circle><circle cx="260" cy="66" r="6" fill="#0D1117" stroke="#5BB08F" stroke-width="2"><animate attributeName="fill" values="#0D1117;#5BB08F;#5BB08F;#0D1117" keyTimes="0;0.26;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="260" cy="66" r="6" fill="none" stroke="#5BB08F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.26;0.34;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.26;0.34;1" dur="16s" repeatCount="indefinite"/></circle><circle cx="470" cy="110" r="6" fill="#0D1117" stroke="#5BB08F" stroke-width="2"><animate attributeName="fill" values="#0D1117;#5BB08F;#5BB08F;#0D1117" keyTimes="0;0.56;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="470" cy="110" r="6" fill="none" stroke="#5BB08F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.56;0.64;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.56;0.64;1" dur="16s" repeatCount="indefinite"/></circle><circle cx="780" cy="104" r="6" fill="#0D1117" stroke="#5BB08F" stroke-width="2"><animate attributeName="fill" values="#0D1117;#5BB08F;#5BB08F;#0D1117" keyTimes="0;0.90;.97;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/></circle><circle cx="780" cy="104" r="6" fill="none" stroke="#5BB08F" opacity="0"><animate attributeName="r" values="6;6;20;20" keyTimes="0;0.90;0.98;1" dur="16s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0;0" keyTimes="0;0.90;0.98;1" dur="16s" repeatCount="indefinite"/></circle>
-
-<g>
-  <animateMotion dur="16s" repeatCount="indefinite" keyPoints="0;.30;.30;.58;.58;1;1" keyTimes="0;.20;.26;.50;.56;.90;1" calcMode="spline"
-    keySplines=".4 0 .6 1;0 0 1 1;.4 0 .6 1;0 0 1 1;.4 0 .6 1;0 0 1 1"><mpath href="#route"/></animateMotion>
-  <g transform="translate(-16 -24)">
-    <rect x="0" y="4" width="21" height="13" rx="2.5" fill="#E6EDF3"/>
-    <path d="M22 8 h6 l5 5 v4 h-11 z" fill="#E6EDF3"/>
-    <rect x="25" y="10" width="4" height="3" rx=".8" fill="#0D1117"/>
-    <circle cx="7" cy="18" r="3" fill="#0D1117" stroke="#E6EDF3" stroke-width="1.6"/>
-    <circle cx="26" cy="18" r="3" fill="#0D1117" stroke="#E6EDF3" stroke-width="1.6"/>
+<clipPath id="map"><rect x="162" y="116" width="360" height="172" rx="12"/></clipPath>
+<rect x="162" y="116" width="360" height="172" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<g clip-path="url(#map)">
+  <path d="M162 258 H522" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/><path d="M162 208 H522" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/><path d="M162 154 H522" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/><path d="M312 116 V288" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/><path d="M424 116 V288" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/><path d="M232 116 V288" stroke="#1C2129" stroke-width="9" stroke-linecap="round"/>
+  <rect x="246" y="128" width="52" height="60" rx="4" fill="#17332A"/>
+  <rect x="338" y="228" width="72" height="44" rx="4" fill="#172A40"/>
+  <path id="route" d="M192 258 H312 V208 H424 V154 H492" fill="none" stroke="#30363D" stroke-width="3" stroke-dasharray="1 6" stroke-linecap="round"/>
+  <path d="M192 258 H312 V208 H424 V154 H492" fill="none" stroke="#6CA0DC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1">
+    <animate attributeName="stroke-dashoffset" values="1.00;0.66;0.66;0.34;0.34;0.00;0.00" keyTimes="0;.22;.30;.52;.60;.85;1" dur="12s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(192 258)"><rect x="-10" y="-10" width="20" height="20" rx="5" fill="#6CA0DC"/><path d="M-5 4 v-5 l5 -4 l5 4 v5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></g>
+  <g transform="translate(312 208)"><circle r="4" fill="#0D1117" stroke="#E0A040" stroke-width="2"/><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.25;.97;1" dur="12s" repeatCount="indefinite"/><path d="M0 -4 c-7 -9 -8 -12 -8 -15 a8 8 0 0 1 16 0 c0 3 -1 6 -8 15 z" fill="#E0A040"/><circle cx="0" cy="-19" r="3" fill="#0D1117"/></g></g><g transform="translate(424 154)"><circle r="4" fill="#0D1117" stroke="#E0A040" stroke-width="2"/><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.52;0.55;.97;1" dur="12s" repeatCount="indefinite"/><path d="M0 -4 c-7 -9 -8 -12 -8 -15 a8 8 0 0 1 16 0 c0 3 -1 6 -8 15 z" fill="#E0A040"/><circle cx="0" cy="-19" r="3" fill="#0D1117"/></g></g><g transform="translate(492 154)"><circle r="4" fill="#0D1117" stroke="#E0A040" stroke-width="2"/><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.85;0.88;.97;1" dur="12s" repeatCount="indefinite"/><path d="M0 -4 c-7 -9 -8 -12 -8 -15 a8 8 0 0 1 16 0 c0 3 -1 6 -8 15 z" fill="#E0A040"/><circle cx="0" cy="-19" r="3" fill="#0D1117"/></g></g>
+  <g>
+    <animateMotion dur="12s" repeatCount="indefinite" keyPoints="0;.34;.34;.66;.66;1;1" keyTimes="0;.22;.30;.52;.60;.85;1" calcMode="linear" rotate="auto"><mpath href="#route"/></animateMotion>
+    <g transform="translate(-14 -8)">
+      <rect x="0" y="1" width="19" height="14" rx="2.5" fill="#E6EDF3"/>
+      <path d="M20 3 h4 a3 3 0 0 1 3 3 v4 a3 3 0 0 1 -3 3 h-4 z" fill="#6CA0DC"/>
+    </g>
   </g>
 </g>
+
+<rect x="538" y="116" width="260" height="172" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<g transform="rotate(-90 602 188)" fill="none" stroke-width="11">
+  <circle cx="602" cy="188" r="34" stroke="#1C2129"/>
+  <circle class="seg" cx="602" cy="188" r="34" stroke="#5BB08F" pathLength="100" stroke-dasharray="62 38"/>
+  <circle class="seg" style="animation-delay:.25s" cx="602" cy="188" r="34" stroke="#E0A040" pathLength="100" stroke-dasharray="24 76" stroke-dashoffset="-63"/>
+  <circle class="seg" style="animation-delay:.5s" cx="602" cy="188" r="34" stroke="#E5736A" pathLength="100" stroke-dasharray="11 89" stroke-dashoffset="-88"/>
+</g>
+<circle cx="672" cy="158" r="4" fill="#5BB08F"/><rect x="684" y="154" width="96" height="8" rx="4" fill="#1C2129"/><rect x="684" y="154" width="78" height="8" rx="4" fill="#5BB08F"><animate attributeName="width" values="78;90;84;96;78" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/></rect><circle cx="672" cy="184" r="4" fill="#E0A040"/><rect x="684" y="180" width="96" height="8" rx="4" fill="#1C2129"/><rect x="684" y="180" width="36" height="8" rx="4" fill="#E0A040"><animate attributeName="width" values="36;26;40;30;36" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/></rect><circle cx="672" cy="210" r="4" fill="#E5736A"/><rect x="684" y="206" width="96" height="8" rx="4" fill="#1C2129"/><rect x="684" y="206" width="14" height="8" rx="4" fill="#E5736A"><animate attributeName="width" values="14;20;10;17;14" dur="8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/></rect>
+<path class="spark" d="M558 268 l28 -8 l28 4 l28 -14 l28 6 l28 -16 l28 2 l28 -10 l28 4" fill="none" stroke="#6CA0DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
+
+<circle r="5" fill="#5BB08F" opacity="0">
+  <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.62;.95;1" calcMode="linear"
+    path="M138 186 C 300 70, 460 70, 602 146"/>
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.62;.66;.92;.95;1" dur="4s" repeatCount="indefinite"/>
+</circle>
+<g class="chips"><rect x="34" y="296" width="44" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="56" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">PHP</text><rect x="86" y="296" width="58" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="115" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">MySQL</text><rect x="152" y="296" width="66" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="185" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Kotlin</text><rect x="226" y="296" width="131" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="292" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Jetpack Compose</text><rect x="365" y="296" width="66" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="398" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">ML Kit</text><rect x="439" y="296" width="73" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="475" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Leaflet</text><rect x="520" y="296" width="66" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="553" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Docker</text></g>
+<text class="mobile" x="35" y="318" fill="#8B949E">PHP · Kotlin · ML Kit · Leaflet</text>
 </svg>

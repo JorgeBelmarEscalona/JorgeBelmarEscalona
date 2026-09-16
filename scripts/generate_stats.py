@@ -193,19 +193,11 @@ def dias(n):
 def readme_block(user, langs, current, longest):
     c = user["contributionsCollection"]
     cal = c["contributionCalendar"]
-    commits = c["totalCommitContributions"] + c["restrictedContributionsCount"]
-    today = dt.date.today()
-    lang_line = " &nbsp;·&nbsp; ".join(f"{name} {pct:.0f}%" for name, _, pct in langs if pct >= 1)
+    lang_line = " · ".join(f"{name} {pct:.0f}%" for name, _, pct in langs if pct >= 1)
     return f"""<!-- stats:start -->
-**{cal["totalContributions"]:,}** contribuciones y **{commits:,}** commits en el último año. Racha actual de **{dias(current)}**, la más larga fue de **{dias(longest)}**.
-
 {picture("activity", "Calendario de contribuciones")}
 
-{picture("langs", "Lenguajes más usados")}
-
-<sub>{lang_line}</sub>
-
-<sub>Actualizado automáticamente el {today.day} de {MONTHS[today.month - 1]} de {today.year}.</sub>
+**{cal["totalContributions"]:,}** contribuciones en el último año · racha más larga de **{dias(longest)}** · {lang_line}
 <!-- stats:end -->"""
 
 

@@ -1,19 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="170" viewBox="0 0 830 170" role="img" aria-label="Reportes desde terreno al panel web">
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="340" viewBox="0 0 830 340" role="img" aria-label="Pangea NC">
 <style>
-  .float { animation: float 6s ease-in-out infinite; }
-  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
-</style>
-<g class="float"><rect x="40" y="26" width="46" height="88" rx="9" fill="#0D1117" stroke="#8B949E" stroke-width="1.5"/><circle cx="63" cy="33" r="1.6" fill="#30363D"/><rect x="47" y="42" width="32" height="24" rx="3" fill="#161B22" stroke="#30363D"/><path d="M52 60 l7 -8 l5 5 l3 -3 l7 8" fill="none" stroke="#30363D" stroke-width="1.3" stroke-linejoin="round"/><rect x="47" y="73" width="26" height="3" rx="1.5" fill="#30363D"/><rect x="47" y="81" width="18" height="3" rx="1.5" fill="#30363D"/><rect x="47" y="94" width="32" height="10" rx="5" fill="#5BB08F" opacity=".85"/></g>
-<g class="float" style="animation-delay:-3s"><rect x="104" y="56" width="46" height="88" rx="9" fill="#0D1117" stroke="#8B949E" stroke-width="1.5"/><rect x="121" y="61" width="12" height="3" rx="1.5" fill="#30363D"/><rect x="111" y="72" width="32" height="24" rx="3" fill="#161B22" stroke="#30363D"/><path d="M116 90 l7 -8 l5 5 l3 -3 l7 8" fill="none" stroke="#30363D" stroke-width="1.3" stroke-linejoin="round"/><rect x="111" y="103" width="26" height="3" rx="1.5" fill="#30363D"/><rect x="111" y="111" width="18" height="3" rx="1.5" fill="#30363D"/><rect x="111" y="124" width="32" height="10" rx="5" fill="#5BB08F" opacity=".85"/></g>
-<path d="M88 66 C 240 66, 330 58, 470 76" fill="none" stroke="#30363D" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M152 100 C 290 100, 350 104, 470 100" fill="none" stroke="#30363D" stroke-width="1.5" stroke-dasharray="3 5"/>
-<rect x="-6" y="-4" width="12" height="8" rx="2" fill="#5BB08F" opacity="0"><animateMotion dur="8s" begin="0.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.05;.35;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .4 1;0 0 1 1" path="M88 66 C 240 66, 330 58, 470 76"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.05;.33;.36;1" dur="8s" begin="0.0s" repeatCount="indefinite"/></rect><rect x="-6" y="-4" width="12" height="8" rx="2" fill="#5BB08F" opacity="0"><animateMotion dur="8s" begin="4.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.05;.35;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .4 1;0 0 1 1" path="M152 100 C 290 100, 350 104, 470 100"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.05;.33;.36;1" dur="8s" begin="4.0s" repeatCount="indefinite"/></rect>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+  .mobile { display: none; }
+  @media (max-width: 560px) {
+    .name { font-size: 52px; }
+    .tagline { display: none; }
+    .chips { display: none; }
+    .mobile { display: inline; font-size: 27px; }
+  }
 
-<rect x="470" y="14" width="320" height="142" rx="10" fill="#0D1117" stroke="#8B949E" stroke-width="1.5"/>
-<path d="M470 30 H790" stroke="#30363D"/>
-<g fill="#30363D"><circle cx="483" cy="22" r="3"/><circle cx="494" cy="22" r="3"/><circle cx="505" cy="22" r="3"/></g>
-<rect x="480" y="40" width="54" height="106" rx="4" fill="#161B22"/>
-<g fill="#30363D"><rect x="488" y="50" width="36" height="4" rx="2"/><rect x="488" y="62" width="28" height="4" rx="2"/><rect x="488" y="74" width="32" height="4" rx="2"/></g>
-<rect x="484" y="46" width="3" height="12" rx="1.5" fill="#5BB08F"/>
-<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.36;.42;.95;1" dur="8s" repeatCount="indefinite"/><rect x="548" y="34" width="232" height="18" rx="4" fill="#1B3B30"/><rect x="560" y="40" width="120" height="5" rx="2.5" fill="#5BB08F" opacity=".7"/><circle cx="766" cy="43" r="3.5" fill="#5BB08F"/></g>
-<g><rect x="560" y="58" width="150" height="5" rx="2.5" fill="#30363D"/><rect x="560" y="67" width="90" height="4" rx="2" fill="#21262D"/><rect x="744" y="59" width="28" height="11" rx="5.5" fill="#D69E2E" fill-opacity=".85"><animate attributeName="fill" values="#D69E2E;#D69E2E;#5BB08F;#5BB08F" keyTimes="0;0.30;0.34;1" dur="16s" repeatCount="indefinite"/></rect></g><g><rect x="560" y="80" width="132" height="5" rx="2.5" fill="#30363D"/><rect x="560" y="89" width="82" height="4" rx="2" fill="#21262D"/><rect x="744" y="81" width="28" height="11" rx="5.5" fill="#D69E2E" fill-opacity=".85"><animate attributeName="fill" values="#D69E2E;#D69E2E;#5BB08F;#5BB08F" keyTimes="0;0.45;0.49;1" dur="16s" repeatCount="indefinite"/></rect></g><g><rect x="560" y="102" width="114" height="5" rx="2.5" fill="#30363D"/><rect x="560" y="111" width="74" height="4" rx="2" fill="#21262D"/><rect x="744" y="103" width="28" height="11" rx="5.5" fill="#D69E2E" fill-opacity=".85"><animate attributeName="fill" values="#D69E2E;#D69E2E;#5BB08F;#5BB08F" keyTimes="0;0.60;0.64;1" dur="16s" repeatCount="indefinite"/></rect></g><g><rect x="560" y="124" width="96" height="5" rx="2.5" fill="#30363D"/><rect x="560" y="133" width="66" height="4" rx="2" fill="#21262D"/><rect x="744" y="125" width="28" height="11" rx="5.5" fill="#D69E2E" fill-opacity=".85"><animate attributeName="fill" values="#D69E2E;#D69E2E;#5BB08F;#5BB08F" keyTimes="0;0.75;0.79;1" dur="16s" repeatCount="indefinite"/></rect></g>
+  .live { transform-box: fill-box; transform-origin: center; animation: live 2.6s ease-out infinite; }
+  @keyframes live { 0% { opacity: .8; transform: scale(1); } 80%, 100% { opacity: 0; transform: scale(2.6); } }
+
+  .flash { opacity: 0; animation: flash 12s infinite; }
+  @keyframes flash { 0%, 4% { opacity: 0; } 5% { opacity: .9; } 9%, 100% { opacity: 0; } }
+  .f1, .f2, .f3 { transform-box: fill-box; transform: scaleX(0); animation: fill1 12s infinite; }
+  .f2 { animation-name: fill2; } .f3 { animation-name: fill3; }
+  @keyframes fill1 { 0%, 10% { transform: scaleX(0); } 16%, 94% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+  @keyframes fill2 { 0%, 15% { transform: scaleX(0); } 20%, 94% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+  @keyframes fill3 { 0%, 19% { transform: scaleX(0); } 25%, 94% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+  .send { transform-box: fill-box; transform-origin: center; animation: send 12s infinite; }
+  @keyframes send { 0%, 27% { transform: scale(1); } 29% { transform: scale(.9); } 32%, 100% { transform: scale(1); } }
+  .mover { opacity: 0; animation: mover 12s cubic-bezier(.5,0,.3,1) infinite; }
+  @keyframes mover {
+    0%, 41% { opacity: 0; transform: translate(0, 8px); }
+    45%, 58% { opacity: 1; transform: translate(0, 0); }
+    66%, 76% { opacity: 1; transform: translate(208px, 0); }
+    84%, 95% { opacity: 1; transform: translate(416px, 0); }
+    100% { opacity: 0; transform: translate(416px, 0); }
+  }
+  .st-a { animation: sta 12s infinite; } .st-b { opacity: 0; animation: stb 12s infinite; } .st-c { opacity: 0; animation: stc 12s infinite; }
+  @keyframes sta { 0%, 62% { opacity: 1; } 64%, 100% { opacity: 0; } }
+  @keyframes stb { 0%, 62% { opacity: 0; } 64%, 80% { opacity: 1; } 82%, 100% { opacity: 0; } }
+  @keyframes stc { 0%, 80% { opacity: 0; } 82%, 100% { opacity: 1; } }
+
+</style>
+<rect x="1" y="1" width="828" height="338" rx="14" fill="#0D1117" stroke="#30363D"/>
+<text class="name" x="34" y="66" font-size="30" font-weight="700" letter-spacing="-.6" fill="#E6EDF3">Pangea NC</text>
+<text class="tagline" x="35" y="94" font-size="16" fill="#8B949E">No conformidades reportadas en terreno y cerradas en el panel</text>
+<circle cx="796" cy="52" r="5" fill="#5BB08F"/>
+<circle class="live" cx="796" cy="52" r="5" fill="none" stroke="#5BB08F" stroke-width="1.5"/>
+
+<rect x="34" y="116" width="104" height="172" rx="16" fill="#161B22" stroke="#30363D" stroke-width="1.5"/><rect x="74" y="124" width="24" height="5" rx="2.5" fill="#30363D"/>
+<rect x="44" y="138" width="84" height="138" rx="8" fill="#0D1117"/>
+<rect x="52" y="146" width="68" height="46" rx="6" fill="#17332A"/>
+<path d="M58 186 l14 -16 l10 10 l8 -7 l14 13 z" fill="#5BB08F" opacity=".7"/>
+<circle cx="106" cy="158" r="5" fill="#E0A040" opacity=".8"/>
+<rect class="flash" x="52" y="146" width="68" height="46" rx="6" fill="#fff"/>
+<rect x="52" y="204" width="68" height="7" rx="3.5" fill="#1C2129"/>
+<rect class="f1" x="52" y="204" width="54" height="7" rx="3.5" fill="#8B949E" opacity=".5"/>
+<rect x="52" y="218" width="68" height="7" rx="3.5" fill="#1C2129"/>
+<rect class="f2" x="52" y="218" width="40" height="7" rx="3.5" fill="#8B949E" opacity=".5"/>
+<rect x="52" y="232" width="68" height="7" rx="3.5" fill="#1C2129"/>
+<rect class="f3" x="52" y="232" width="60" height="7" rx="3.5" fill="#8B949E" opacity=".5"/>
+<rect class="send" x="52" y="250" width="68" height="18" rx="9" fill="#5BB08F"/>
+<rect x="162" y="116" width="636" height="172" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/><circle cx="182" cy="138" r="4.5" fill="#E0A040"/><text x="194" y="143" font-size="13" font-weight="600" fill="#8B949E">Abierta</text><rect x="172" y="154" width="200" height="124" rx="8" fill="#1C2129" opacity=".7"/><circle cx="390" cy="138" r="4.5" fill="#6CA0DC"/><text x="402" y="143" font-size="13" font-weight="600" fill="#8B949E">En revisión</text><rect x="380" y="154" width="200" height="124" rx="8" fill="#1C2129" opacity=".7"/><circle cx="598" cy="138" r="4.5" fill="#5BB08F"/><text x="610" y="143" font-size="13" font-weight="600" fill="#8B949E">Cerrada</text><rect x="588" y="154" width="200" height="124" rx="8" fill="#1C2129" opacity=".7"/><rect x="182" y="162" width="180" height="34" rx="6" fill="#0D1117" stroke="#30363D"/><rect x="182" y="162" width="4" height="34" rx="2" fill="#E0A040"/><rect x="196" y="171" width="120" height="6" rx="3" fill="#30363D"/><rect x="196" y="183" width="60" height="5" rx="2.5" fill="#1C2129"/><rect x="182" y="202" width="180" height="34" rx="6" fill="#0D1117" stroke="#30363D"/><rect x="182" y="202" width="4" height="34" rx="2" fill="#E0A040"/><rect x="196" y="211" width="90" height="6" rx="3" fill="#30363D"/><rect x="196" y="223" width="80" height="5" rx="2.5" fill="#1C2129"/><rect x="390" y="162" width="180" height="34" rx="6" fill="#0D1117" stroke="#30363D"/><rect x="390" y="162" width="4" height="34" rx="2" fill="#6CA0DC"/><rect x="404" y="171" width="100" height="6" rx="3" fill="#30363D"/><rect x="404" y="183" width="70" height="5" rx="2.5" fill="#1C2129"/><rect x="598" y="162" width="180" height="34" rx="6" fill="#0D1117" stroke="#30363D"/><rect x="598" y="162" width="4" height="34" rx="2" fill="#5BB08F"/><rect x="612" y="171" width="130" height="6" rx="3" fill="#30363D"/><rect x="612" y="183" width="50" height="5" rx="2.5" fill="#1C2129"/><rect x="598" y="202" width="180" height="34" rx="6" fill="#0D1117" stroke="#30363D"/><rect x="598" y="202" width="4" height="34" rx="2" fill="#5BB08F"/><rect x="612" y="211" width="80" height="6" rx="3" fill="#30363D"/><rect x="612" y="223" width="64" height="5" rx="2.5" fill="#1C2129"/>
+<g class="mover">
+  <rect x="182" y="242" width="180" height="34" rx="6" fill="#0D1117" stroke="#8B949E" stroke-opacity=".5"/>
+  <rect class="st-a" x="182" y="242" width="4" height="34" rx="2" fill="#E0A040"/>
+  <rect class="st-b" x="182" y="242" width="4" height="34" rx="2" fill="#6CA0DC"/>
+  <rect class="st-c" x="182" y="242" width="4" height="34" rx="2" fill="#5BB08F"/>
+  <rect x="196" y="251" width="96" height="6" rx="3" fill="#E6EDF3" opacity=".55"/>
+  <rect x="196" y="263" width="60" height="5" rx="2.5" fill="#30363D"/>
+  <g class="st-c"><circle cx="344" cy="259" r="8" fill="#5BB08F"/>
+    <path d="M340 259 l3 3 l5 -6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<circle r="5" fill="#5BB08F" opacity="0">
+  <animateMotion dur="12s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.3;.42;1" calcMode="linear"
+    path="M120 259 C 184 259, 152 259, 222 259"/>
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.3;.32;.4;.42;1" dur="12s" repeatCount="indefinite"/>
+</circle>
+
+<g class="chips"><rect x="34" y="296" width="44" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="56" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">PHP</text><rect x="86" y="296" width="95" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="133" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">JavaScript</text><rect x="189" y="296" width="44" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="211" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">PWA</text><rect x="240" y="296" width="66" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="273" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Kotlin</text><rect x="314" y="296" width="58" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="343" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">Swift</text><rect x="381" y="296" width="73" height="26" rx="13" fill="#161B22" stroke="#30363D"/><text x="417" y="313.5" text-anchor="middle" font-size="13" fill="#8B949E">SwiftUI</text></g>
+<text class="mobile" x="35" y="318" fill="#8B949E">PHP · PWA · Kotlin · Swift</text>
 </svg>
