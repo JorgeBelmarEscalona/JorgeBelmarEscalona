@@ -36,5 +36,5 @@ Construyo plataformas web y apps móviles para equipos que trabajan lejos de una
   <img src="https://raw.githubusercontent.com/JorgeBelmarEscalona/JorgeBelmarEscalona/output/activity-light.svg" alt="Calendario de contribuciones" width="100%">
 </picture>
 
-**425** contribuciones en el último año · racha más larga de **5 días** · Rust 48% · JavaScript 33% · Python 11% · HTML 4% · C++ 3%
+**429** contribuciones en el último año · racha más larga de **5 días** · Rust 51% · JavaScript 31% · Python 10% · HTML 4% · C++ 3%
 <!-- stats:end -->
