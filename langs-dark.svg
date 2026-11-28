@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="10" viewBox="0 0 830 10" role="img" aria-label="Lenguajes">
+<style>
+  .s { transform: scaleX(0); animation: grow .9s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes grow { to { transform: scaleX(1); } }
+</style>
+<rect class="s" style="transform-origin:0.0px 0;animation-delay:0ms" x="0.0" y="0" width="416.9" height="10" rx="5" fill="#dea584"/>
+<rect class="s" style="transform-origin:420.9px 0;animation-delay:120ms" x="420.9" y="0" width="244.1" height="10" rx="5" fill="#f1e05a"/>
+<rect class="s" style="transform-origin:669.0px 0;animation-delay:240ms" x="669.0" y="0" width="83.9" height="10" rx="5" fill="#3572A5"/>
+<rect class="s" style="transform-origin:756.9px 0;animation-delay:360ms" x="756.9" y="0" width="31.9" height="10" rx="5" fill="#e34c26"/>
+<rect class="s" style="transform-origin:792.8px 0;animation-delay:480ms" x="792.8" y="0" width="24.7" height="10" rx="5" fill="#f34b7d"/>
+<rect class="s" style="transform-origin:821.5px 0;animation-delay:600ms" x="821.5" y="0" width="8.5" height="10" rx="5" fill="#89e051"/>
+</svg>
